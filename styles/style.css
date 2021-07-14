@@ -55,10 +55,6 @@ main {
     bottom: -10px;
     transform: scaleY(0.8);
   }
-  /* 80% {
-    bottom: 40px;
-    left: 2200px;
-  } */
 }
 #banner {
   background-color: #2d25a0;
