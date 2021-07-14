@@ -10,8 +10,13 @@ body {
 }
 
 .container {
-  width: 1170px;
+  width: 1160px;
   margin: auto;
+}
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* top-section */
@@ -146,6 +151,42 @@ article p {
   color: #6c6c6c;
   line-height: 26px;
 }
+/* top scorar section  */
+.top-scorar h3 {
+  margin-bottom: 50px;
+  display: block;
+  font-size: 20px;
+}
+#score-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 50px;
+}
+#score-table td,
+#score-table th {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 8px;
+}
+#score-table tr:nth-child(even) {
+  background-color: rgb(231, 230, 230);
+}
+#score-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  background-color: #2d25a0;
+  color: white;
+}
+
+/* video section  */
+
+.video-highlight h3 {
+  margin-bottom: 30px;
+  display: block;
+  font-size: 20px;
+}
+
 /* footer section  */
 .footer-section {
   display: flex;
@@ -156,6 +197,7 @@ article p {
   width: 483.87px;
   height: 110px;
   margin-bottom: 20px;
+  margin-top: 158px;
 }
 .social-link a {
   text-decoration: none;
@@ -173,3 +215,86 @@ article p {
   font-weight: 400;
   margin-bottom: 63px;
 }
+
+/* media query */
+
+/* mobile devices */
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+
+  /* banner section  */
+  .half-width {
+    width: 100%;
+  }
+  .header-title {
+    width: 278px;
+    height: 138px;
+    font-size: 36px;
+    line-height: 50px;
+    margin-top: 112px;
+    margin-left: 16px;
+    margin-bottom: 30px;
+  }
+  .half-width a {
+    margin-left: 16px;
+    margin-bottom: 0px;
+  }
+  .half-width img {
+    width: 300px;
+    height: 259.17px;
+
+    overflow: hidden;
+
+    margin-left: 16px;
+    margin-bottom: 60px;
+
+    margin-top: 50px;
+  }
+  .top-section {
+    flex-direction: column;
+  }
+  /* player section */
+  .player-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 28px;
+    margin-top: 70px;
+    margin-bottom: 45px;
+  }
+  .one-third-width {
+    width: 318px;
+    margin: auto;
+  }
+  article img {
+    width: 285px;
+    height: 240px;
+    margin-top: 16px;
+  }
+  /* top scorer section  */
+  .top-scorar h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .score-table {
+    overflow-x: auto;
+  }
+  /* hightlight section  */
+  .video-highlight h3 {
+    text-align: center;
+  }
+  /* footer section  */
+  .footer-section img {
+    margin-top: 45px;
+    width: 270.87px;
+    height: 72px;
+    margin-left: 16px;
+  }
+  .social-link {
+    margin-bottom: 20px;
+  }
+}
+
+/* tab devices */
